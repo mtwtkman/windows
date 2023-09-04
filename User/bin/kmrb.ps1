@@ -1,1 +1,1 @@
-komorebic start --await-configuration -c $Env:USERPROFILE\.config\komorebi\komorebi.json --whkd
+komorebic start -c $Env:USERPROFILE\.config\komorebi\komorebi.json --whkd
