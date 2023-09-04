@@ -7,11 +7,8 @@ Install-Module PSReadLine
 Write-Output "Install komorebi"
 winget install LGUG2Z.whkd
 winget install LGUG2Z.komorebi
-Copy-Item User\komorebi.json $Env:USERPROFILE
-Push-Location $Env:USERPROFILE
-komorebic fetch-app-specific-configuration
-Pop-Location
-Copy-Item -Recurse User\.config $Env:USERPROFILE
+Copy-Item -Recurse User\* $Env:USERPROFILE
+komorebic fetch-app-specific-configuration $Env:USERPROFILE\.config\komorebi\applications.yaml
 
 # install Windows Terminal Preview
 Write-Output "Install WindowsTerminal(Preview Edition)"
