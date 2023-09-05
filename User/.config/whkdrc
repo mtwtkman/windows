@@ -1,7 +1,7 @@
 .shell powershell
 
 # Reload whkd configuration
-alt + o                 : taskkill /f /im whkd.exe && Start-Process whkd -WindowStyle hidden
+alt + o                 : taskkill /f /im whkd.exe ; Start-Process whkd -WindowStyle hidden
 alt + shift + o         : komorebic reload-configuration
 
 # Focus windows
@@ -37,9 +37,10 @@ alt + shift + oem_minus : komorebic resize-axis vertical decrease
 # Manipulate windows
 alt + t                 : komorebic toggle-float
 alt + shift + f         : komorebic toggle-monocle
+alt + shift + x         : komorebic close
 
 # Window manager options
-alt + shift + r         : komorebic retile
+alt + shift + r         : komorebic quick-load
 alt + p                 : komorebic toggle-pause
 
 # Layouts
