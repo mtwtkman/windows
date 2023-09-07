@@ -1,5 +1,6 @@
+$KomorebiDir = "$Env:USERPROFILE\.config\komorebi"
+
 function Start-Komorebi {
-  $KomorebiDir = "$Env:USERPROFILE\.config\komorebi"
   komorebic start -c $KomorebiDir\komorebi.json --whkd
 }
 
@@ -21,12 +22,8 @@ function Show-Usage {
   Write-Output "Restart komorebi process:  kmrb.ps1 restart"
 }
 
-function Load-Komorebi-Custom-Layout($layoutFile) {
-  komorebic load-custom-layout $layoutFile
-}
-
-function Reset-Komorebi-Config {
-  komorebic clear-layout
+function Load-Komorebi-Custom-Layout($LayoutFile) {
+  komorebic load-custom-layout $KomorebiDir\custom_layout\$LayoutFile
 }
 
 if ($args.Length -eq 0 -or $args -eq "start") {
