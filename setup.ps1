@@ -3,12 +3,20 @@ Write-Output "Install PSReadLine"
 Install-Module -Name PowerShellGet -Force
 Install-Module PSReadLine
 
-# install komorebi(https://github.com/LGUG2Z/komorebi)
-Write-Output "Install komorebi"
-winget install LGUG2Z.whkd
-winget install LGUG2Z.komorebi
+Write-Output "Put powershell profile"
+Copy-Item WindowsPowerShell -Recurse $Env:USERPROFILE\Documents
+
+# install GlazeWM(https://github.com/glazerdesktop/GlazeWM)
+Write-Output "Install GlazeWM"
+winget install GlazeWM
 Copy-Item -Recurse User\* $Env:USERPROFILE
-komorebic fetch-app-specific-configuration $Env:USERPROFILE\.config\komorebi\applications.yaml
+$galzewmExePath = (Get-Command glazewm).Path
+$sh = New-Object -comObject WScript.Shell
+$dest = [System.Environment]::GetFolderPath("StartMenu") + "\galzewm.lnk"
+$shortcut = sh.CreateShortcut($dest)
+$shortcut.TargetPath = $galzewmExePath
+$shortcut.Save()
+
 
 # install Windows Terminal Preview
 Write-Output "Install WindowsTerminal(Preview Edition)"
