@@ -44,7 +44,7 @@ bar:
   opacity: 1.0
   background: "#20242cc4"
   foreground: "#ffffff"
-  font_family: "Segoe UI"
+  font_family: "Hack Nerd Font"
   font_size: "13px"
   padding: "4px 6px"
   offset_x: "0"
@@ -70,7 +70,7 @@ bar:
       margin: "0 4px 0 0"
       padding: "0 8px"
     - type: "battery"
-      label_charging: "{battery_level}%"
+      label_charging: "  {battery_level}%"
       margin: "0 4px 0 0"
       padding: "0 8px"
     - type: "clock"
