@@ -12,7 +12,7 @@ winget install GlazeWM
 $galzewmExePath = (Get-Command glazewm).Path
 $sh = New-Object -comObject WScript.Shell
 $dest = [System.Environment]::GetFolderPath("StartMenu") + "\galzewm.lnk"
-$shortcut = sh.CreateShortcut($dest)
+$shortcut = $sh.CreateShortcut($dest)
 $shortcut.TargetPath = $galzewmExePath
 $shortcut.Save()
 
