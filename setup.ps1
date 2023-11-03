@@ -9,6 +9,7 @@ Copy-Item WindowsPowerShell -Recurse $Env:USERPROFILE\Documents
 # install GlazeWM(https://github.com/glazerdesktop/GlazeWM)
 Write-Output "Install GlazeWM"
 winget install GlazeWM
+powershell
 $galzewmExePath = (Get-Command glazewm).Path
 $sh = New-Object -comObject WScript.Shell
 $dest = [System.Environment]::GetFolderPath("StartMenu") + "\galzewm.lnk"

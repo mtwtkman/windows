@@ -4,11 +4,3 @@ networkingMode=mirrored
 dnsTunneling=true
 firewall=true
 autoProxy=true
-
-[boot]
-systemd=true
-
-[automount]
-enabled = true
-options = "metadata"
-mountFsTab = true
