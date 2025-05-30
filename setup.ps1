@@ -24,3 +24,7 @@ Copy-Item WIndowsTerminal\settings.json $Env:LOCALAPPDATA\Packages\Microsoft.Win
 
 Write-Output "Put setting files"
 Copy-Item -Recurse User\* $Env:USERPROFILE
+
+# wsl setting
+wsl --install archlinux
+wsl -u root -e mount --make-rshared /
