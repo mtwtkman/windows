@@ -1,295 +1,62 @@
 {
     "$help": "https://aka.ms/terminal-documentation",
-    "$schema": "https://aka.ms/terminal-profiles-schema-preview",
-    "actions":
-    [
-        {
-            "command":
-            {
-                "action": "commandPalette"
-            },
-            "id": "User.commandPalette.D3F0B923"
-        },
-        {
-            "command": "find",
-            "id": "User.find"
-        }
-    ],
+    "$schema": "https://aka.ms/terminal-profiles-schema",
+    "actions": [],
     "copyFormatting": "none",
     "copyOnSelect": false,
     "defaultProfile": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
-    "disableAnimations": false,
-    "keybindings":
+    "disableAnimations": true,
+    "keybindings": 
     [
         {
-            "id": "User.find",
+            "id": "Terminal.FindText",
             "keys": "ctrl+shift+f"
         },
         {
-            "id": null,
-            "keys": "ctrl+v"
-        },
-        {
-            "id": null,
-            "keys": "alt+right"
-        },
-        {
-            "id": null,
-            "keys": "alt+up"
-        },
-        {
-            "id": null,
-            "keys": "alt+left"
-        },
-        {
-            "id": null,
-            "keys": "alt+shift+plus"
-        },
-        {
-            "id": null,
-            "keys": "alt+space"
-        },
-        {
-            "id": null,
-            "keys": "ctrl+shift+down"
-        },
-        {
-            "id": null,
-            "keys": "alt+down"
-        },
-        {
-            "id": null,
-            "keys": "alt+enter"
-        },
-        {
-            "id": null,
-            "keys": "ctrl+shift+up"
-        },
-        {
-            "id": null,
-            "keys": "alt+shift+minus"
-        },
-        {
-            "id": null,
-            "keys": "ctrl+shift+pgup"
-        },
-        {
-            "id": null,
-            "keys": "ctrl+shift+pgdn"
-        },
-        {
-            "id": null,
-            "keys": "f11"
-        },
-        {
-            "id": null,
-            "keys": "ctrl+numpad0"
-        },
-        {
-            "id": null,
-            "keys": "ctrl+shift+end"
-        },
-        {
-            "id": null,
-            "keys": "ctrl+shift+home"
-        },
-        {
-            "id": null,
-            "keys": "ctrl+shift+m"
-        },
-        {
-            "id": null,
-            "keys": "ctrl+alt+1"
-        },
-        {
-            "id": null,
-            "keys": "alt+shift+left"
-        },
-        {
-            "id": null,
-            "keys": "ctrl+alt+2"
-        },
-        {
-            "id": null,
-            "keys": "ctrl+alt+9"
-        },
-        {
-            "id": null,
-            "keys": "ctrl+alt+3"
-        },
-        {
-            "id": null,
-            "keys": "ctrl+alt+4"
-        },
-        {
-            "id": null,
-            "keys": "ctrl+alt+7"
-        },
-        {
-            "id": null,
-            "keys": "ctrl+shift+minus"
-        },
-        {
-            "id": null,
-            "keys": "ctrl+alt+5"
-        },
-        {
-            "id": null,
-            "keys": "alt+shift+right"
-        },
-        {
-            "id": null,
-            "keys": "ctrl+alt+6"
-        },
-        {
-            "id": null,
-            "keys": "ctrl+alt+8"
-        },
-        {
-            "id": null,
-            "keys": "win+sc(41)"
-        },
-        {
-            "id": null,
-            "keys": "ctrl+k"
-        },
-        {
-            "id": null,
-            "keys": "menu"
-        },
-        {
-            "id": null,
-            "keys": "ctrl+shift+a"
-        },
-        {
-            "id": null,
-            "keys": "alt+shift+up"
-        },
-        {
-            "id": null,
-            "keys": "alt+shift+down"
-        },
-        {
-            "id": null,
-            "keys": "shift+insert"
-        },
-        {
-            "id": null,
-            "keys": "alt+f4"
-        },
-        {
-            "id": null,
+            "id": "Terminal.DuplicatePaneAuto",
             "keys": "alt+shift+d"
-        },
-        {
-            "id": null,
-            "keys": "ctrl+g"
-        },
-        {
-            "id": null,
-            "keys": "ctrl+shift+k"
-        },
-        {
-            "id": null,
-            "keys": "ctrl+c"
-        },
-        {
-            "id": null,
-            "keys": "ctrl+shift+d"
-        },
-        {
-            "id": null,
-            "keys": "ctrl+shift+g"
-        },
-        {
-            "id": null,
-            "keys": "ctrl+j"
-        },
-        {
-            "id": null,
-            "keys": "ctrl+shift+j"
-        },
-        {
-            "id": null,
-            "keys": "ctrl+shift+\\"
-        },
-        {
-            "id": null,
-            "keys": "ctrl+insert"
-        },
-        {
-            "id": null,
-            "keys": "enter"
-        },
-        {
-            "id": null,
-            "keys": "ctrl+numpad_plus"
-        },
-        {
-            "id": null,
-            "keys": "ctrl+alt+left"
-        },
-        {
-            "id": null,
-            "keys": "ctrl+alt+comma"
-        },
-        {
-            "id": null,
-            "keys": "ctrl+shift+space"
-        },
-        {
-            "id": "User.commandPalette.D3F0B923",
-            "keys": "ctrl+shift+p"
         }
     ],
-    "language": "en-US",
-    "newTabMenu":
+    "newTabMenu": 
     [
         {
             "type": "remainingProfiles"
         }
     ],
-    "profiles":
+    "profiles": 
     {
-        "defaults":
+        "defaults": 
         {
-            "antialiasingMode": "cleartype",
+            "cursorShape": "bar",
             "experimental.retroTerminalEffect": false,
-            "font":
+            "font": 
             {
                 "face": "Hack Nerd Font",
-                "size": 8,
+                "size": 10,
                 "weight": "normal"
             },
-            "intenseTextStyle": "bright",
             "opacity": 100,
-            "padding": "3",
-            "scrollbarState": "hidden",
-            "tabTitle": null
+            "scrollbarState": "hidden"
         },
-        "list":
+        "list": 
         [
             {
+                "commandline": "%SystemRoot%\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
                 "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
                 "hidden": false,
                 "name": "Windows PowerShell"
             },
             {
-                "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
+                "commandline": "C:\\Windows\\system32\\wsl.exe --distribution-id {e1dc2338-e5ae-44a8-8a00-64c65971c65a} --cd ~",
+                "guid": "{6274a757-5900-4c63-b8e8-f980f85eb7d1}",
                 "hidden": false,
-                "name": "Command Prompt"
-            },
-            {
-                "commandline": "C:\\WINDOWS\\system32\\wsl.exe -d Arch",
-                "guid": "{a5a97cb8-8961-5535-816d-772efe0c6a3f}",
-                "hidden": false,
+                "icon": "C:\\Users\\hwiin\\AppData\\Local\\wsl\\{e1dc2338-e5ae-44a8-8a00-64c65971c65a}\\shortcut.ico",
                 "name": "Arch",
-                "source": "Windows.Terminal.Wsl"
+                "startingDirectory": "~"
             }
         ]
     },
     "schemes": [],
-    "tabWidthMode": "compact",
-    "theme": "dark",
+    "tabWidthMode": "equal",
     "themes": []
 }
