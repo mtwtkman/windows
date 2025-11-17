@@ -17,10 +17,7 @@ $shortcut = $sh.CreateShortcut($dest)
 $shortcut.TargetPath = $galzewmExePath
 $shortcut.Save()
 
-# install Windows Terminal Preview
-Write-Output "Install WindowsTerminal(Preview Edition)"
-winget install Microsoft.WindowsTerminalPreview
-Copy-Item WIndowsTerminal\settings.json $Env:LOCALAPPDATA\Packages\Microsoft.WindowsTerminalPreview_8wekyb3d8bbwe\LocalState\setings.json
+Copy-Item WIndowsTerminal\settings.json $Env:LOCALAPPDATA\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\settings.json
 
 Write-Output "Put setting files"
 Copy-Item -Recurse User\* $Env:USERPROFILE
