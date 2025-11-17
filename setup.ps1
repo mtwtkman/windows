@@ -17,6 +17,7 @@ $shortcut = $sh.CreateShortcut($dest)
 $shortcut.TargetPath = $galzewmExePath
 $shortcut.Save()
 
+Write-Output "Put Windows Terminal setting file"
 Copy-Item WIndowsTerminal\settings.json $Env:LOCALAPPDATA\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\settings.json
 
 Write-Output "Put setting files"
